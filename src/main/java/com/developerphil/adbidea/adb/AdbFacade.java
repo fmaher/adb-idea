@@ -61,6 +61,14 @@ public class AdbFacade {
         executeOnDevice(project, new ClearDataAndRestartCommand());
     }
 
+    public static void enableDebugView(Project project) {
+        executeOnDevice(project, new EnableDebugViewCommand());
+    }
+
+    public static void disableDebugView(Project project) {
+        executeOnDevice(project, new DisableDebugViewCommand());
+    }
+
     private static void executeOnDevice(final Project project, final Command runnable) {
 
         if (isGradleSyncInProgress(project)) {

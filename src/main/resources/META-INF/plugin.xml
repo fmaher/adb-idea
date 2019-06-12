@@ -197,6 +197,20 @@
                     text="ADB Restart App With Debugger"
                     description="Restarts the current application and attach the debugger">
             </action>
+
+            <action id="com.developerphil.adbidea.action.DebugViewEnableAction"
+                    class="com.developerphil.adbidea.action.DebugViewEnableAction"
+                    text = "Enable Firebase DebugView"
+                    description="Enable Firebase debug mode">
+            </action>
+
+            <action id="com.developerphil.adbidea.action.DebugViewDisableAction"
+                    class="com.developerphil.adbidea.action.DebugViewDisableAction"
+                    text = "Disable Firebase DebugView"
+                    description="Disable Firebase debug mode">
+            </action>
+
+
             <add-to-group group-id="AndroidToolsGroup" anchor="first"/>
         </group>
     </actions>
